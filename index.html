@@ -82,9 +82,9 @@
     <main>
       <section class="section-one">
         <div class="container-custom">
-          <div class="row gx-5">
-            <div class="col p-0 custom-col">
-              <div class="text-col">
+          <div class="row gx-0">
+            <div class="col-12 col-md-6 order-2 order-md-1 p-0 custom-col">
+              <div class="text-col text-center text-md-start">
                 <h2 class="section-heading">Transform your brand</h2>
                 <p class="section-p">
                   We are a full-service creative agency specializing in helping
@@ -94,12 +94,18 @@
                 <a href="#" class="custom-link">Learn More</a>
               </div>
             </div>
-            <div class="col p-0">
+            <div class="col-12 col-md-6 order-1 order-md-2 p-0 col-image">
               <div class="image-col">
-                <img
-                  src="./images/desktop/image-transform.jpg"
-                  alt="Image transform"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="./images/mobile/image-transform.jpg"
+                  />
+                  <img
+                    src="./images/desktop/image-transform.jpg"
+                    alt="Egg on bright yellow background"
+                  />
+                </picture>
               </div>
             </div>
           </div>
@@ -108,9 +114,23 @@
 
       <section class="section-two">
         <div class="container-custom">
-          <div class="row gx-0 flex-row-reverse">
-            <div class="col p-0 custom-col">
-              <div class="text-col">
+          <div class="row gx-0">
+            <div class="col-12 col-md-6 p-0 col-image">
+              <div class="image-col">
+                <picture>
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="./images/mobile/image-stand-out.jpg"
+                  />
+                  <img
+                    src="./images/desktop/image-stand-out.jpg"
+                    alt="Pink glass on coral background"
+                  />
+                </picture>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 p-0 custom-col">
+              <div class="text-col text-center text-md-start">
                 <h2 class="section-heading">Stand out to the right audience</h2>
                 <p class="section-p">
                   Using a collaborative formula of designers, researchers,
@@ -118,14 +138,6 @@
                   extend your brand in digital places.
                 </p>
                 <a href="#" class="custom-link">Learn More</a>
-              </div>
-            </div>
-            <div class="col p-0">
-              <div class="image-col">
-                <img
-                  src="./images/desktop/image-stand-out.jpg"
-                  alt="Image transform"
-                />
               </div>
             </div>
           </div>
