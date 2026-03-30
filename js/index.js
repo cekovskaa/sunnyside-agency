@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   menu.addEventListener("click", (e) => {
-    // Close after clicking any link/button inside the dropdown
     const target = e.target;
     if (target && (target.tagName === "A" || target.tagName === "BUTTON")) {
       setOpen(false);
@@ -33,9 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape" && isCurrentlyOpen()) setOpen(false);
   });
 
-  // Ensure menu doesn't stay open if user resizes to desktop
   window.addEventListener("resize", () => {
     if (window.innerWidth >= 992 && isCurrentlyOpen()) setOpen(false);
   });
 });
-

@@ -32,6 +32,14 @@ body {
   padding-inline: 15px;
   padding-block: 10px;
   text-transform: uppercase;
+  transition:
+    background-color 0.2s ease-in,
+    color 0.2s ease-in;
+}
+
+.navbar-custom .btn-custom:hover {
+  background-color: #70cefe;
+  color: #e9ffff;
 }
 
 .navbar-toggler {
@@ -61,6 +69,7 @@ body {
   height: 95vh;
   position: relative;
 }
+
 .arrow-down {
   position: absolute;
   left: 50%;
@@ -129,6 +138,71 @@ body {
   font-weight: 600;
   font-size: 18px;
   padding: 0;
+}
+
+/* section one styles */
+.custom-link {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-decoration: none;
+  color: #27303b;
+
+  background-repeat: no-repeat;
+  background-size: 100% 5px;
+  background-position: 0 100%;
+  border-radius: 3px;
+}
+
+.section-one .custom-link {
+  background-image: linear-gradient(#fff2bc, #fff2bc);
+}
+
+.section-one .custom-link:hover {
+  background-image: linear-gradient(#f3d305cf, #f3d505);
+}
+
+.section-two .custom-link {
+  background-image: linear-gradient(#ffdad4, #ffdad4df);
+}
+
+.section-two .custom-link:hover {
+  background-image: linear-gradient(#fa7467, #fa7367d9);
+}
+
+.section-heading {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  color: #233045;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.section-p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #87868fcb;
+  margin-bottom: 25px;
+}
+
+.text-col {
+  width: 50%;
+  margin-inline: auto;
+}
+
+.image-col img {
+  width: auto;
+  height: auto;
+}
+
+.section-one .custom-col,
+.section-two .custom-col {
+  background-color: #fffbf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* 
@@ -232,7 +306,6 @@ responsive styles */
   }
 }
 
-/* Keep default navbar link styles for desktop (white on hero) */
 @media (min-width: 992px) {
   .nav-dropdown {
     display: flex !important;
@@ -240,7 +313,6 @@ responsive styles */
     justify-content: flex-end;
     position: static;
     transform: none;
-    /* width: auto; */
     background: transparent;
     padding: 0;
     border-radius: 0;
