@@ -10,6 +10,11 @@ body {
   background-color: white;
 }
 
+.container-custom {
+  width: 80%;
+  margin-inline: auto;
+}
+
 /* header styles */
 
 .navbar-custom {
@@ -219,7 +224,6 @@ body {
 
 /* section three styles */
 
-/* section three */
 .section-three .image-col {
   position: relative;
 }
@@ -256,7 +260,6 @@ body {
   width: 50%;
 }
 
-/* colour variants to match each background */
 .image-text--green h3 {
   color: #25544d;
 }
@@ -271,6 +274,63 @@ body {
 
 .image-text--blue p {
   color: #1a3c4da3;
+}
+
+/* testimonials section styles */
+
+.testimonials {
+  padding-block: 120px;
+  background-color: #fffbf9;
+}
+
+.testimonials-heading {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #a7a9ac;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+
+.testimonial-quote {
+  border: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.testimonial-quote p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #5b636dd4;
+  width: 80%;
+  margin-inline: auto;
+}
+
+.testimonial-name {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 16px;
+  color: #27303b;
+  margin-bottom: 6px;
+}
+
+.testimonial-role {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #a7a9accd;
+  margin: 0;
 }
 
 /* 
@@ -295,6 +355,14 @@ responsive styles */
 
   .image-text {
     padding: 40px 60px 10px;
+  }
+
+  .testimonials {
+    padding-block: 60px;
+  }
+
+  .container-custom {
+    width: 85%;
   }
 }
 
@@ -334,6 +402,21 @@ responsive styles */
 
   .image-text {
     padding: 40px 40px 0px;
+  }
+
+  .container-custom {
+    width: 90%;
+  }
+
+  .testimonial-quote p {
+    width: 90%;
+    font-size: 12px;
+  }
+  .testimonial-name {
+    font-size: 14px;
+  }
+  .testimonial-role {
+    font-size: 10px;
   }
 }
 
@@ -375,6 +458,23 @@ responsive styles */
 
   .image-text p {
     width: 70%;
+  }
+
+  .container-custom {
+    width: 80%;
+  }
+
+  .testimonial-quote p {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .testimonial-name {
+    font-size: 16px;
+  }
+
+  .testimonial-role {
+    font-size: 13px;
   }
 }
 
@@ -421,6 +521,14 @@ responsive styles */
 
   .image-text p {
     width: 90%;
+  }
+
+  .testimonials-heading {
+    font-size: 14px;
+  }
+
+  .container-custom {
+    width: 85%;
   }
 }
 
