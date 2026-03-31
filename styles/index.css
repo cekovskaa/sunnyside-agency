@@ -4,10 +4,52 @@
   box-sizing: border-box;
 }
 
+:root {
+  color-scheme: light;
+}
+
+html {
+  background-color: #fff;
+}
+
 body {
   font-family: "Barlow", sans-serif;
   line-height: 1.6;
   background-color: white;
+  color: #233045;
+}
+
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  padding: 10px 14px;
+  background: #fff;
+  color: #233045;
+  border-radius: 8px;
+  z-index: 9999;
+  text-decoration: none;
+  transform: translateY(-200%);
+  transition: transform 0.15s ease-in-out;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+  outline: 2px solid hsl(51, 100%, 49%);
+  outline-offset: 2px;
+}
+
+/* Prevent auto-darkening when user/device is in dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+  }
+
+  html,
+  body {
+    background-color: #fff;
+    color: #233045;
+  }
 }
 
 .container-custom {

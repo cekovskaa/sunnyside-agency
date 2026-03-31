@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sunnyside is a full-service creative agency specializing in helping brands grow fast through compelling visuals and standout digital experiences."
+    />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#3ebfff" />
 
     <link
       rel="icon"
@@ -33,11 +39,12 @@
     <link rel="stylesheet" href="./styles/index.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
     <header class="hero">
-      <nav class="navbar navbar-expand-lg navbar-custom">
+      <nav class="navbar navbar-expand-lg navbar-custom" aria-label="Primary">
         <div class="container-fluid px-5 py-3">
-          <a class="navbar-brand" href="#">
-            <img src="./images/logo.svg" alt="Sunny side brand logo" />
+          <a class="navbar-brand" href="#" aria-label="Sunnyside home">
+            <img src="./images/logo.svg" alt="Sunnyside" />
           </a>
           <button
             id="mobileNavToggle"
@@ -47,7 +54,8 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <i class="fa-solid fa-bars"></i>
+            <span class="visually-hidden">Menu</span>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
           </button>
           <div
             class="navbar-collapse nav-dropdown"
@@ -65,7 +73,7 @@
                 <a class="nav-link" href="#">Projects</a>
               </li>
               <li class="nav-item">
-                <button class="btn btn-custom">Contact</button>
+                <button class="btn btn-custom" type="button">Contact</button>
               </li>
             </ul>
           </div>
@@ -75,11 +83,11 @@
       <h1 class="text-center main-heading">We Are Creatives</h1>
 
       <div class="arrow-down">
-        <img src="./images/icon-arrow-down.svg" alt="Arrow down image" />
+        <img src="./images/icon-arrow-down.svg" alt="" aria-hidden="true" />
       </div>
     </header>
 
-    <main>
+    <main id="main" tabindex="-1">
       <section class="section-one">
         <div>
           <div class="row gx-0">
@@ -263,35 +271,59 @@
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="gallery" aria-label="Image gallery">
         <div class="row gx-0">
           <div class="col-6 col-md-3 px-0">
-            <img
-              src="./images/desktop/image-gallery-milkbottles.jpg"
-              alt="Milkbottles image"
-              class="w-100"
-            />
+            <picture>
+              <source
+                media="(max-width: 425px)"
+                srcset="./images/mobile/image-gallery-milkbottles.jpg"
+              />
+              <img
+                src="./images/desktop/image-gallery-milkbottles.jpg"
+                alt="Milkbottles image"
+                class="w-100"
+              />
+            </picture>
           </div>
           <div class="col-6 col-md-3 px-0">
-            <img
-              src="./images/desktop/image-gallery-orange.jpg"
-              alt="Orange slice image"
-              class="w-100"
-            />
+            <picture>
+              <source
+                media="(max-width: 425px)"
+                srcset="./images/mobile/image-gallery-orange.jpg"
+              />
+              <img
+                src="./images/desktop/image-gallery-orange.jpg"
+                alt="Orange slice image"
+                class="w-100"
+              />
+            </picture>
           </div>
           <div class="col-6 col-md-3 px-0">
-            <img
-              src="./images/desktop/image-gallery-cone.jpg"
-              alt="Cone image"
-              class="w-100"
-            />
+            <picture>
+              <source
+                media="(max-width: 425px)"
+                srcset="./images/mobile/image-gallery-cone.jpg"
+              />
+              <img
+                src="./images/desktop/image-gallery-cone.jpg"
+                alt="Cone image"
+                class="w-100"
+              />
+            </picture>
           </div>
           <div class="col-6 col-md-3 px-0">
-            <img
-              src="./images/desktop/image-gallery-sugarcubes.jpg"
-              alt="Suggar cubes image"
-              class="w-100"
-            />
+            <picture>
+              <source
+                media="(max-width: 425px)"
+                srcset="./images/mobile/image-gallery-sugar-cubes.jpg"
+              />
+              <img
+                src="./images/desktop/image-gallery-sugarcubes.jpg"
+                alt="Sugar cubes image"
+                class="w-100"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -323,22 +355,22 @@
         <ul class="list-unstyled d-flex justify-content-center gap-4 mb-0">
           <li>
             <a href="#" aria-label="Facebook" class="footer-social">
-              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-facebook" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a href="#" aria-label="Instagram" class="footer-social">
-              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a href="#" aria-label="Twitter" class="footer-social">
-              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-twitter" aria-hidden="true"></i>
             </a>
           </li>
           <li>
             <a href="#" aria-label="Pinterest" class="footer-social">
-              <i class="fa-brands fa-pinterest"></i>
+              <i class="fa-brands fa-pinterest" aria-hidden="true"></i>
             </a>
           </li>
         </ul>
